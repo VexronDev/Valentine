@@ -249,7 +249,13 @@ document.getElementById("heartcon2").addEventListener('click', function()
   setTimeout(paper3, 1500);
   setTimeout(paper2, 3000);
   setTimeout(paper, 4500);
+  setTimeout(heartbg, 4500);
 });
+
+function heartbg(){
+  document.getElementById("heartbg").style.display = "block";
+}
+
 
 function paper(){
   document.getElementById("paper").style.display = "block";
