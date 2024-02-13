@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel= "Stylesheet" href="Styles/Javascript_Animation.js"> 
+        <link rel= "stylesheet" href="Styles/Body.css"> 
+        <link rel="stylesheet" href="Styles/aos-master/dist/aos.css">
+        <script src="Styles/aos-master/dist/aos.js"></script>
+    </head>
+
+    <body>
+
+        <!-- The first part of the animation -->
+
+      
+       
+        <svg xmlns="http://www.w3.org/2000/svg" id="Svg1" version="1.1" viewBox="-5 -5 278 56">
+            <filter id="blur">
+             <feGaussianBlur stdDeviation="1.6" />
+            </filter>
+
+            <g id="layer1" transform="translate(29.1 -127.42)">
+              <path id="line" d="M -50 167 c 91 15 69 -4 126 -12 c 18.45 -2.78 32.82 4.86 28.75 9.83 c -3.82 4.66 -25.77 -21.18 -14.81 -31.5 c 9.54 -8.98 17.64 10.64 16.42 17.06 c -1.51 -6.2 2.95 -26.6 14.74 -22.11 c 11.7 4.46 -4.33 49.03 -15.44 44.08 c -6.97 -3.1 15.44 -16.26 26.1 -16 c 23.03 0.56 55.6 27.51 126.63 3.36" pathLength="1" />
+            </g>
+            <g id="layer2" transform="translate(29.1 -127.42)">
+              <path filter="url(#blur)" id="point" d="M -50 167 c 91 15 69 -4 126 -12 c 18.45 -2.78 32.82 4.86 28.75 9.83 c -3.82 4.66 -25.77 -21.18 -14.81 -31.5 c 9.54 -8.98 17.64 10.64 16.42 17.06 c -1.51 -6.2 2.95 -26.6 14.74 -22.11 c 11.7 4.46 -4.33 49.03 -15.44 44.08 c -6.97 -3.1 15.44 -16.26 26.1 -16 c 23.03 0.56 55.6 27.51 126.63 3.36" pathLength="1" />
+            </g>    
+        </svg>
+
+        <svg xmlns="http://www.w3.org/2000/svg" id="Svg2" version="1.1" viewBox="-5 -5 278 56" style="display: none;">
+            <g id="layer3" transform="translate(29.1 -127.42)">
+                <path id="perma-line" d="M -50 167 c 91 15 69 -4 126 -12 c 18.45 -2.78 32.82 4.86 28.75 9.83 c -3.82 4.66 -25.77 -21.18 -14.81 -31.5 c 9.54 -8.98 17.64 10.64 16.42 17.06 c -1.51 -6.2 2.95 -26.6 14.74 -22.11 c 11.7 4.46 -4.33 49.03 -15.44 44.08 c -6.97 -3.1 15.44 -16.26 26.1 -16 c 23.03 0.56 55.6 27.51 126.63 3.36" pathLength="1" />
+            </g>
+        </svg>
+       
+     
+
+        <!-- The first part of the animation -->
+
+        <!--==========================================================================================================-->
+
+        <!-- The second part of the animation -->
+
+      
+        
+        <svg xmlns="http://www.w3.org/2000/svg" id="Svg5" version="1.1" viewBox="0 0 278 80" style="display: none;">
+            <g id="layer3" transform="translate(0 5)">
+                <path id="boxline" d="M 69.5 0 L 208.5 0 L 208.5 70 L 69.5 70 L 69.5 -0.1" pathLength="1" />
+            </g>
+        </svg>
+        
+        
+
+        <!-- The second part of the animation -->
+
+        <!--==========================================================================================================-->
+
+
+        <!-- Letter for second part of animation -->
+
+        
+       
+        <div id = "backletter" class = "LetterBack" style="display: none; background-color: rgba(255, 255, 255, 1);">
+            
+            <button class="nobutton2" id = "nobutton2">
+                >:
+            </button>
+            
+            <div class = "message-2nd1" id = "message2nd1">
+                Will you be my Valentine?
+            </div>
+            <div id = "messageyesnodiv" style="height: 10%;">
+            </div>
+            <div id = "buttoncont" style= "display: flex; align-items: center; justify-content: center; width: 100%;">
+                <div id = "yesbutton" class = "yesbutton" data-aos = "zoom-in">
+                    Yes
+                </div>
+                <div id = "yesnodivider" style = "width: 10%; height: 6vw;">
+                </div>
+                <div id = "nobutton" class = "nobutton">
+                    No
+                </div>
+            </div>
+            
+            <div id = "letterin" style=" display: none; position: relative; width: 100%; height: 100%; justify-content: center; align-items: center;">
+                
+                
+                <div id="heartcon" class="heart-container" style="position: absolute; z-index: 1; top: 50%; left: 45%; opacity: 0;">
+                    <svg width="10vw" height="10vw" viewBox="0 0 80 80" class='heart-stroke'>
+                        <path id="heartline" d="M 40 70.14 L 9.1 39.24 a 17 17 90 0 1 -0.24 -24 l 0.24 -0.24 a 17.44 17.44 90 0 1 24.28 0 L 40 21.54 l 6.6 -6.6 A 16.18 16.18 90 0 1 58.26 9.8 a 17.78 17.78 90 0 1 12.62 5.16 a 17 17 90 0 1 0.24 24 l -0.24 0.24 Z M 21.28 14.26 A 12.88 12.88 90 0 0 12.14 36.38 L 40 64.12 L 67.88 36.24 A 12.88 12.88 90 0 0 68 18 l 0 0 a 12.88 12.88 90 0 0 -9.54 -3.7 A 12 12 90 0 0 49.66 18 L 40 27.56 L 30.42 18 A 12.88 12.88 90 0 0 21.28 14.26 Z"/>
+                    </svg>
+                </div>
+                <div id="heartcon2" class="heart-container" style="display: none; position: absolute; z-index: 6; top: 50%; left: 45%; opacity: 0;">
+                </div>
+                <div id="heartshape" class="heart2" style="width: 5vw; position: absolute; z-index: 3; top: 50%; left: 45%;"></div>
+
+                <div id ="PolygonAnimation" style="display: flex; height: 100%; width: 100%;">
+                    <svg xmlns="http://www.w3.org/2000/svg" id="Svg8" version="1.1" viewBox="0 0 278 80" style="display: flex;">
+                        <g id="layer7" transform="translate(0 -29.8)">
+                            <path id="boxline" d="M 0 0 L 139 85 L 278 0" pathLength="1" />
+                        </g>
+                    </svg>
+                </div>
+            </div>
+
+            
+        </div>
+        
+        
+        <div id="paper2" class="paper" style="z-index: 3; transform: rotate(5deg); display: none; opacity: 0;">
+        </div>
+
+        <div id="paper3" class="paper" style="z-index: 2; transform: rotate(2deg); display: none; opacity: 0;">
+        </div>
+
+        <div id="paper" class="paper" style="display: none; opacity: 0;">
+            <div class="letcont" style="margin: 1.5vw; width: 100%; height: 100%; line-height: 3vw; margin-top: 1vw; text-align: justify;">
+                Dear Greece,<br>
+                <div class="letcont" style="margin-right:3vw; margin-top: 0.5vw; line-height: 2.5vw;">
+                <span style="margin-left: 3.5vw;">Hellooo, I hope you have a good Valentine day today. 
+                Sorry, this year, I can't be there with you to spend time together TT. It's been around 1 year and a half 
+                for us now. I hope we can make it through these few months and meet again after that >:3.
+                We will go on a date and walk around in China. Spend our times in cafe and watching movies. It will be a wonderful time.</span><br> 
+                <span style="margin-left: 3.5vw;">I also sent you a gift for 
+                this Valentine. I hope it arrives on time ehe. Aside from that, for this Valentine, I will be here for you
+                to spend time together whenever you want. So, just contact me and we can play, watch, or talk about stuff :3. I will be waiting here for you~</span>
+                </div>
+                <div class="letcont" style="display: flex; justify-content: right; margin-right: 3vw;">
+                    <div id="easter1" class="letcont" style="width: 6vw;">
+                    ~Pichii &#9829;
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="easter1-1" style="z-index: 9; position: absolute; width: auto; height: 27vw; right: 5vw; rotate: 9deg; opacity: 0; display: none;">
+            <img style= "max-width: 100%; max-height: 100%; border-radius: 10px;" src="Styles/aos-master/easter1.jpg">
+        </div>
+
+        <div id="easter1-2" style="z-index: 9; position: absolute; width: auto; height: 27vw; left: 8vw; rotate: -9deg; opacity: 0; display: none;">
+            <img style= "max-width: 100%; max-height: 100%; border-radius: 10px;" src="Styles/aos-master/easter2.png">
+        </div>
+
+
+       
+            
+            
+
+
+       
+
+        <!--
+
+        <div class="envelope-container">
+            <button class="close-btn" id="close-btn" onclick="toggleEnvelope()">close envelope</button>
+            <button class="heart-btn" id="heart-btn" onclick="toggleEnvelope()">&#10084;</button>
+            <div class="envelope-flap">
+              <svg class="inner">   
+              <polygon class="inner-polygon" id="inner-polygon" points="5,0 345,0 175,145" ></polygon>
+              </svg>
+              <svg class="outer" id="outer">
+              <polygon class="outer-polygon" points="5,150 345,150 175,0"></polygon>
+              </svg>
+            </div>
+            <div class="envelope-base"></div>
+        </div>
+
+        -->
+    </body>
+    <script src="Styles/Javascript_Animation.js"></script>
+    <script src="Styles/anime-master/anime-master/lib/anime.min.js"></script>
+    <script>
+        AOS.init({offset: 150, once: true,});
+    </script>
+</html>
