@@ -1,0 +1,546 @@
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Initial Animation */
+
+svg #line 
+{
+    fill: none;
+    stroke: #e00000;
+    stroke-width: 1.5;
+    stroke-linecap: butt;
+    stroke-linejoin: round;
+    stroke-miterlimit: 4;
+  
+    stroke-opacity: 1;
+    stroke-dasharray: 1;
+    stroke-dashoffset: 10;
+    animation: dash 3.7s linear;
+}
+
+svg #perma-line 
+{
+    fill: none;
+    stroke: #e00000;
+    stroke-width: 1.5;
+    stroke-linecap: butt;
+    stroke-linejoin: round;
+    stroke-miterlimit: 4;
+    transform-origin: center bottom;
+    
+
+    stroke-opacity: 1;
+    stroke-dasharray: 1;
+    stroke-dashoffset: 10;
+}
+
+svg #point 
+{
+    fill: none;
+    stroke: #f00000;
+    stroke-width: 5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: .1;
+    stroke-opacity: 1;
+    stroke-dasharray: .0001, .9999;
+    stroke-dashoffset: 1;
+    animation: dash 3.7s linear;
+}
+
+#Svg4 path
+{
+    animation: scaleDown2 0.5s ease-in-out forwards;
+}
+
+#Svg3:hover path 
+{
+    animation: scaleDown 0.5s ease-in-out forwards;
+}
+
+#Svg3:not(:hover) path 
+{ 
+    animation: scaleUp 0.5s ease-in-out forwards;
+}
+
+@keyframes dash 
+{
+    0% {
+      stroke-dashoffset: 1;
+    }
+    80% {
+      stroke-dashoffset: 0;
+    }
+    100% {
+      stroke-dashoffset: 0;
+    }
+}
+
+@keyframes scaleUp 
+{
+    0% {
+      transform: scale(0.97);
+    }
+    100% {
+      transform: scale(1);
+    }
+}
+
+@keyframes scaleDown
+{
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0.97);
+    }
+}
+
+@keyframes scaleDown2
+{
+    0% {
+      transform: scale(0.97);
+    }
+    100% {
+      transform: scale(0.94);
+      opacity: 0;
+    }
+}
+
+/* Initial Animation */
+
+/* Second Animation */
+
+svg #boxline
+{
+    fill: #ffffff;
+    stroke: rgb(126, 126, 126);
+    stroke-width: 0.5;
+    stroke-linecap: butt;
+    stroke-linejoin: round;
+    stroke-miterlimit: 4;
+    transform-origin: center;
+    fill-opacity: 0;
+
+    stroke-opacity: 1;
+    stroke-dasharray: 1;
+    stroke-dashoffset: 10;
+    animation: dash 3.7s linear, real 0.5s forwards 3.7s;
+}
+
+@keyframes real {
+    0%
+    {
+    fill-opacity: 0;
+    }
+
+    100%
+    {
+    fill-opacity: 1;
+    }
+}
+/* For Font */
+
+@font-face 
+{
+    font-family: 'Valentine-Font';
+    src: url('Fonts/Valentine-Font.otf') format('opentype'); /* OpenType font format */
+}
+
+html, body 
+{
+    background: #FFB6C1; 
+    height: 100vh;
+    width: 100vw;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    font-family: "Poppins", sans-serif;
+}
+
+p 
+{
+    font-size: 24px;
+    text-align: center;
+    margin-top: 40px;
+}
+  
+a 
+{
+color: #333;
+}
+
+a:hover 
+{
+    color: #DC143C;
+}
+  
+button 
+{
+    background: transparent;
+    border: none;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+/* MESSAGES */
+
+.message-2nd1
+{
+    font-family: 'Valentine-Font', sans-serif;
+    border-right: 5px solid;
+    width: 78%;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 4.5vw;
+    color: #FF3334;
+}
+
+.yesbutton
+{
+    font-family: 'Valentine-Font', sans-serif;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 6vw;
+    width: 8vw;
+    font-size: 3vw;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s ease-in-out;
+    background-color: rgba(220, 20,60, 1);
+    opacity: 0;
+    color: white;
+}
+
+.nobutton
+{
+    font-family: 'Valentine-Font', sans-serif;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 6vw;
+    width: 8vw;
+    font-size: 3vw;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s ease-in-out;
+    background-color: rgba(131, 9, 33, 1);
+    opacity: 0;
+    color: white;
+}
+
+.nobutton2
+{
+    font-family: 'Valentine-Font', sans-serif;
+    position: absolute;
+    line-height: 2.5vw;
+    top: 55%;
+    left: 30%;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-50%, -50%);
+    height: 6vw;
+    width: 8vw;
+    font-size: 3vw;
+    border-radius: 10px;
+    display: none;
+    border: none;
+    background-color: rgb(131, 9, 33);
+    color: white;
+}
+
+@keyframes real2 
+{
+    0%
+    {
+        opacity: 0;
+    }    
+
+    100%
+    {
+        opacity: 1;
+    }
+}
+
+@keyframes out2 
+{
+    0%
+    {
+        opacity: 1;
+    }    
+
+    100%
+    {
+        opacity: 0;
+    }
+}
+
+.message-2 
+{
+    display: none;
+}
+
+@keyframes cursor 
+{
+    50% 
+    {
+        border-color: transparent;
+    }
+}
+
+
+@keyframes typing 
+{
+    from
+    {
+        width: 0;
+    }
+}
+
+/* LETTER BACK SIDE */
+
+.Letcont
+{
+    justify-content: center;
+    align-items: center;
+    display: flex, inline-block;
+    width: auto;
+    height: 100vh;
+}
+
+.LetterBack
+{
+    width: 50.35vw; 
+    height: 25.46vw;
+    border: 0.21vw solid rgb(126, 126, 126);
+    border-radius: 0.3vw;
+    background-color: rgb(255, 255, 255); 
+    display: none; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.topcont
+{
+    width: 60vw;
+    height: 32.25vh;
+}
+
+/* ENVELOPE */
+
+/* envelope-container contains all elements of the featured component (you can think of it like your canvas area) */
+
+.envelope-container 
+{
+    position: relative; /* needed to allow for positioning some elements as absolute within the container */
+    justify-content: center;
+    align-items: center;
+    height: 25.46vw;
+    width: 50.43vw;
+    display: flex;
+}
+
+.envelope-base 
+{
+    width: 100%;
+    height: 100%;
+    border: 0.21vw solid rgb(126, 126, 126);
+    border-radius: 0.3vw;
+    background-color: rgb(255, 255, 255); 
+    z-index: 1;
+}
+
+.envelope-flap 
+{
+    position: absolute;
+    bottom: 10.05vw;
+    height: 300px;
+    width: 100%;
+    z-index: 10;
+}
+
+.inner 
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 50%;
+    width: 100%;
+}
+
+.inner-polygon 
+{
+    fill: white; 
+    stroke: gray; 
+    stroke-width: 1;
+}
+  
+.inner-open 
+{
+    fill: lightgray;
+}
+
+.outer 
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    overflow: hidden;
+}
+
+.outer-polygon 
+{
+    fill: white; 
+    stroke: gray; 
+    stroke-width: 1;
+}
+
+.outer-open 
+{
+    opacity: 1;
+}
+
+/* HEART BUTTON */
+
+
+.heart-container {
+   position: relative;
+   width: 5vw;
+   height: 5vw;
+   animation: real2 0.5s forwards 3.7s;
+}
+
+.heart {
+    --c: #d32f2f;
+    width: 200px;
+    aspect-ratio: 1;
+    background:
+     radial-gradient(at 70% 31%,var(--c) 29%,#0000 30%),
+     radial-gradient(at 30% 31%,var(--c) 29%,#0000 30%),
+     conic-gradient(from -45deg at 50% 84%,var(--c) 90deg,#0000 0) 
+      bottom/100% 50% no-repeat;
+    
+    animation: pulse 0.3s linear, pulse2 0.7s 0.3s infinite;
+  }
+
+.heart2 {
+    width: 0;
+    height: 0;
+  }
+
+@keyframes Cscaledown
+{
+    to {
+        transform: scale(0);
+    }
+}
+
+.heart-stroke {
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   top: 0;
+   left: 0;
+   fill: #d32f2f;
+}
+
+
+@keyframes pulse {
+   0% {
+      transform: scale(0);
+   }
+
+   100%
+   {
+    transform: scale(1);
+   }
+}
+
+@keyframes pulse2 {
+    0% {
+       transform: scale(1);
+    }
+    
+    50% {
+        transform: scale(1.2);
+    }
+
+    100%
+    {
+     transform: scale(1);
+    }
+ }
+
+@keyframes outrot {
+    0% {
+        transform: scale(1);
+        rotate: 0;
+    }
+  
+    100% {
+        transform: scale(0);
+        rotate: 1turn;
+    }
+}
+
+/*For last Paper Part */
+
+.paper
+{
+    height: 43vw;
+    width: 35vw;
+    position: absolute;
+    box-shadow: 0 0 8px rgba(0,0,0,0.2);
+    z-index: 5;
+    background-color: white;
+}
+
+.letcont
+{
+    font-family: 'Valentine-Font', sans-serif;
+    font-size: 2vw;
+    color: #FF3334;
+}
+
+@keyframes rotatepaperback {
+    to{
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes rotpaper2 {
+    0%
+    {
+        transform: rotate(0deg);
+    }
+
+    100%
+    {
+        transform: rotate(5deg);
+    }
+}
+
+@keyframes rotpaper3 {
+    0%
+    {
+        transform: rotate(0deg);
+    }
+
+    100%
+    {
+        transform: rotate(2deg);
+    }
+}
